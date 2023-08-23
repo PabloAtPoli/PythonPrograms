@@ -3,6 +3,7 @@ It finds the n Fibonacci numbers using functional programming
 
 """
 
+
 def fibonacci_recursive(n):
     if n <= 0:
         return []
@@ -14,6 +15,7 @@ def fibonacci_recursive(n):
         fib_sequence = fibonacci_recursive(n - 1)
         fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
         return fib_sequence
+
 
 # Get input from the user
 n = int(input("Enter the value of n: "))
