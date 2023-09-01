@@ -1,17 +1,17 @@
 class Grade:
-    weight_midterm = 0.3
-    weight_final = 0.2
-    weight_homework = 0.5
+    WEIGHT_MIDTERM = 0.3
+    WEIGHT_FINAL = 0.2
+    WEIGHT_HOMEWORK = 0.5
     def __init__(self, midterm, final, homework):
         self.midterm = midterm
         self.final = final
         self.homework = homework
     
     def calculate_grade(self):
-        return self.midterm * Grade.weight_midterm + self.final * Grade.weight_final + self.homework * Grade.weight_homework
+        return self.midterm * Grade.WEIGHT_MIDTERM + self.final * Grade.WEIGHT_FINAL + self.homework * Grade.WEIGHT_HOMEWORK
 
     def __str__(self):
-        return f"weight_midterm: {Grade.weight_midterm}, weight_final: {Grade.weight_final}, weight_homework: {Grade.weight_homework}, midterm: {self.midterm}, final: {self.final}, homework: {self.homework}"
+        return f"weight_midterm: {Grade.WEIGHT_MIDTERM}, weight_final: {Grade.WEIGHT_FINAL}, weight_homework: {Grade.WEIGHT_HOMEWORK}, midterm: {self.midterm}, final: {self.final}, homework: {self.homework}"
     
 
 
@@ -21,7 +21,7 @@ print(f"Grade object using __str__() function: {grade}")
 
 # Get one class and one instance attribute using the dot "." operator
 print("\nGet one class and one instance attribute using the dot \".\" operator")
-print("Class attribute weight_midterm:", Grade.weight_midterm)
+print("Class attribute weight_midterm:", Grade.WEIGHT_MIDTERM)
 print("Instance attribute midterm:", grade.midterm)
 print(f"The content of the grade object with vars is {vars(grade)}")
 print(f"Grade object using __str__() function: {grade}")
@@ -29,7 +29,7 @@ print(f"Grade object using __str__() function: {grade}")
 
 # Change one class and one instance attribute using the dot "." operator
 print("\nChange one class and one instance attribute using the dot \".\" operator")
-Grade.weight_midterm = 0.4
+Grade.WEIGHT_MIDTERM = 0.4
 grade.midterm = 4.0
 print(f"The content of the grade object with vars is {vars(grade)}")
 print(f"Grade object using __str__() function: {grade}")
