@@ -5,8 +5,8 @@ These are examples from the NLTK book.
 # import nltk
 # nltk.download()
 
-from nltk.book import text1, text2, text3, text4, sent1, sent2, sent3
-import matplotlib.pyplot as plt
+from nltk.book import text1 # , text2, text3, text4, sent1, sent2, sent3
+# import matplotlib.pyplot as plt
 
 # print(text1)
 # print(text2)
@@ -75,6 +75,13 @@ import matplotlib.pyplot as plt
 # print(text3[:10])
 # print("Word from index 100 to 200 in text3")
 # print(text3[100:200])
+
+saying = ['After', 'all', 'is', 'said', 'and', 'done',
+'more', 'is', 'said', 'than', 'done']
+tokens = set(saying)
+tokens = sorted(tokens)
+print(f"The result is {tokens[-2:]}")
+
 
 
 
