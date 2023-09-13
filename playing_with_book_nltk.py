@@ -78,9 +78,19 @@ from nltk.book import text1 # , text2, text3, text4, sent1, sent2, sent3
 
 saying = ['After', 'all', 'is', 'said', 'and', 'done',
 'more', 'is', 'said', 'than', 'done']
+
+print("Original saying: ", saying)
+print("")
+
 tokens = set(saying)
+print("Unique words in saying: ", tokens)
+print("")
+
 tokens = sorted(tokens)
-print(f"The result is {tokens[-2:]}")
+print("Sorted unique words in saying: ", tokens)
+print("")
+
+print(f"tokens[-2:] is {tokens[-2:]}")
 
 
 
